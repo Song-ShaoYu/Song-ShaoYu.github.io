@@ -1,0 +1,5 @@
+site_name: My Docs
+site_url: https://song-shaoyu.github.io/shaoyu.github.io/
+site_author: songshaoyu
+theme: 
+  name: material
