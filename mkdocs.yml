@@ -1,5 +1,68 @@
+# [Info]
 site_name: Song Shaoyu
 site_url: https://song-shaoyu.github.io
 site_author: songshaoyu
+
+
+# [Navigtion]
+nav:
+  - 单细胞测序:
+    - SingleCellSequencing/index.md 
+    - scRNA-seq:
+      - 单细胞测序技术: SingleCellSequencing/scRNA-seq/sequencing.md
+      - 1 数据比对: SingleCellSequencing/scRNA-seq/phase1.md
+      - 2 从count矩阵到细胞类型定义: 
+        - 数据质控: SingleCellSequencing/scRNA-seq/Phase2/qc.md
+        - 批次矫正: SingleCellSequencing/scRNA-seq/Phase2/contamination.md
+        - 去除RNA污染: SingleCellSequencing/scRNA-seq/Phase2/batch.md
+        - 降维聚类
+        - 差异分析
+        - 功能分析
+        - 细胞类型注释工具
+        - 细胞类型经典marker
+      - 3 高级分析
+        - 细胞间相互作用分析
+        
 theme: 
   name: material
+  
+features:
+  - navigation.tabs # 使用Tab来进行分类
+  - navigation.top # 返回顶部的按钮 在上滑时出现
+  - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+  - navigation.expand # 打开Tab时左侧目录全部展开
+  - search.suggest # 搜索输入一些字母时推荐补全整个单词
+  - search.highlight # 搜索出的文章关键词加入高亮
+  - content.code.copy # 可以通过按钮复制代码
+  ## [bottom-left corner]
+copyright: songshaoyu # 左下角的版权声明
+
+markdown_extensions:
+  - pymdownx.arithmatex: # 数学公式支持
+      generic: true
+  - attr_list # 给图片后面添加{width="300"}设置大小
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
+  - pymdownx.details # admonition需要
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+
+
+
+
+
+
+
+
+
+
+
+
