@@ -3,7 +3,3 @@ site_url: https://song-shaoyu.github.io
 site_author: songshaoyu
 theme: 
   name: material
-nav:
-  - Home: './'
-  - 'Introduction': 'index.md'
-  - 'scRNA-seq': 'scRNA-seq.md'
